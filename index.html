@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="intro">
+        <h1>Memory Adventure</h1>
+        <form action="" id="settings">
+            <p>Choose Edition:</p>
+            <div id="edition">
+                <div>
+                    <img src="images/waterlife/1.png">
+                    <input type="radio" id="waterlife" name="edition" value="waterlife" checked>
+                    <label for="waterlife">Waterlife</label>
+                </div>
+                <div>
+                    <img src="images/wildlife/1.png">
+                    <input type="radio" id="wildlife" name="edition" value="wildlife">
+                    <label for="wildlife">Wildlife</label>
+                </div>
+            </div>
+            <p>Choose Difficulty:</p>
+            <div>
+                <input type="radio" id="easy" name="difficulty" value="easy" checked>
+                <label for="easy">Easy</label>
+                <input type="radio" id="medium" name="difficulty" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="hard" name="difficulty" value="hard">
+                <label for="hard">Hard</label>
+            </div>
+            <button>Play!</button>
+        </form>
+    </section>
+    <main class="hidden">
+        <div id="side-panel">
+            <h1>Memory Adventure</h1>
+            <h2>Waterlife Edition</h2>
+            <div id="scoreboard">
+                <p id="difficulty">Difficulty: Easy</p>
+                <p id="correct">Correct: 0/6</p>
+                <p id="score">Score: 0</p>
+                <p id="multiplyer">Multiplyer: 1</p>
+            </div>
+            <div id="controls">
+                <button id="restart">Restart</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div id="board">
+        </div>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
